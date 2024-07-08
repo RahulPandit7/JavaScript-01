@@ -37,3 +37,37 @@ const myFunction = function () {
 console.log(typeof myFunction);
 
 
+
+
+//   Memory 
+
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+// Stack 
+let myusername = "Rahul@123"
+
+let anotherusername = "pandit@456"
+
+anotherusername = "aarti@123"
+
+console.log(myusername); // Rahul@123
+console.log(anotherusername);  // aarti@123
+
+
+// Heap 
+
+let userOne = {
+    userName: "Rahul",
+    email: "rahul@gmail.com",
+    pass: "832964749"
+
+}
+
+let userTwo = userOne
+
+userTwo.userName = "Aatri"
+
+console.log(userOne.userName);  // Aarti
+console.log(userTwo.userName); // Aarti
+
